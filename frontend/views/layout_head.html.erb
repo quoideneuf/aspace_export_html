@@ -1,0 +1,12 @@
+<% if controller.controller_name == 'resources' %>
+	<%= javascript_include_tag "#{@base_url}/assets/export_html.js" %>
+<% end %>
+
+
+<% if controller.controller_name == 'jobs' && controller.action_name == 'show' %>
+	<%= javascript_include_tag "#{@base_url}/assets/job_links.js" %>
+<% end %>
+
+
+
+
